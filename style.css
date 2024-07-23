@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 120vh;
+  background-image: url("jinnah-block.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.07;
+  z-index: 1;
+}
+
+/* Ensure nav, hersection, and buttons have a higher z-index */
+.nav, .hersection, .button, .view-portfolio-button {
+  position: relative;
+  z-index: 10;
+}
+.navitems button{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: 8px;
+  padding-left: 9px;
+  border-radius: 32px;
+}
+:hover.navitems button{
+  background-color: red;
+  
+}
+
+/* Common styles for buttons */
+.hersection, .view-portfolio-button h2 {
+  
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.mainheading button{
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border-radius: 50px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* Hover effect for buttons */
+.button:hover, .view-portfolio-button:hover h2 {
+  background-color: red;
+  color: white;
+}
+
+/* Additional styles for 'View Portfolio' button */
+.view-portfolio-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navitems h1 {
+  font-family: 'logotype', Times, serif;
+  font-weight: bold;
+}
+.hersection h1 {
+  font-family: 'logotype', Times, serif;
+}
+.herosection2 {
+  width: 90%;
+  font-family: "Poppins";
+  font-weight: bold;
+  min-height: 50vh;
+}
+@media (min-width: 768px) {
+  .herosection2 {
+    height: 75vh;
+  }
+}
+.work h1 {
+  font-family: 'logotype', Times, serif;
+}
+.sayingsection {
+  font-family: 'logotype', Times, serif;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .sayingsection {
+    height: 75vh;
+  }
+}
+.section2 h1 {
+  font-family: "logotype";
+}
+.section32 h1,
+.section32 h2,
+.contactme > h3,
+.cont2 :nth-child(1),
+.cont1 :nth-child(1) {
+  font-family: 'logotype', Times, serif;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .herosection3 {
+    width: 90%;
+    height: 7vh;
+  }
+  .hersection{
+    padding-left: 45px;
+  }
+  .hersection h2{
+    font-weight: lighter;
+  }
+}
+
+button.contact-button {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.contact-button:hover {
+  background-color: #f56565; /* Red-500 in Tailwind */
+  color: white;
+}
